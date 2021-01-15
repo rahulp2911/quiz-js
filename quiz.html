@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asychron Quiz Assignment</title>
+    
+  <!-- include quiz.css page -->
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  
+  <div class="wrapper">
+      <div class="quiz">
+          <div class="quiz_header">
+                   <div class="quiz_text">
+                       <h2>Quiz </h2> <!--display Quiz name-->
+                  </div>
+                   <div class="quiz_timer">    <!--set timer-->
+                  
+                      <p id="blink">  Timer :  <!--blink design-->
+                         <span id="min" ></span>  <!--set id timer.js page-->
+                          <b>Min</b>      
+                          <span id="remain"></span>  <!--set id timer.js page-->
+                          <b>Sec</b>
+                      </p>
+                               <script type="text/javascript"> 
+                                    var blink = document.getElementById('blink');
+                                      setInterval(function(){
+                                        blink.style.opacity=(blink.style.opacity==0 ? 1 :0); },400);
+                               </script>
+
+                  </div>
+             </div>
+                       <div class="quiz_body">
+                           <h2 id="status" ></h2>
+                          <div id="test" ></div>   
+         </div>
+      </div>
+  </div>
+
+  <!-- site.js  page call -->
+  <script src="test.js"></script>
+
+   <!-- timer.js page call-->
+      <script src="timer.js"></script>  
+
+</body>
+</html>

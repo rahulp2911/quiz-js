@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asychron Quiz Assignment</title>
+
+
+<!--include quiz.css page -->
+ <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    
+    <div class="wrapper">  <!--make class-->
+        <div class="welcome_text">
+            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">   <!--submit button event -->
+                <button>Start Quiz</button>
+            </form>
+        </div>
+    </div>
+
+                    <script>
+                        function submitForm(e) 
+                        {                         //submit button event  
+                             e.preventDefault();  
+                          location.href = "quiz.html";  // open next page(this page)
+                        }
+                  </script>
+  
+</body>
+</html>
+

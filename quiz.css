@@ -1,0 +1,78 @@
+/* total element set and change */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .wrapper {    /* set wrapper class */
+    display: flex;    /* flex = perfect centre set */
+    justify-content: center; /* horizontal center*/
+    align-items: center;   /*vertical center*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #b7b91a;  /* background color set= blue */
+  }
+  
+  .welcome_text {    /* set welcome_text class set */
+    width: 200px;
+  }
+  .welcome_form button {   /* set button */
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 100px; /* set curve type */
+    background-color: #fff;
+    color: #341f97;
+    font-size: 22px;  
+  }
+  
+  .welcome_form button:hover {
+    cursor: pointer;           /* cursor change*/
+  }
+/* .....................clossing start page designing......*/
+
+/* ....................open quiz page designing.....*/
+
+.quiz {   /* set quiz class */
+    display: grid;
+    grid-template-rows: 40px auto;  /* set row size */
+    width: 800px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* set sub class */ 
+  .quiz_header {
+    display: flex;
+    justify-content: space-between; /* space quiz text and timer*/
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .quiz_body {
+    padding: 30px 30px;
+    background-color: #ecf0f1;
+  }
+  .quiz_text {  /* user display info */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 30px;
+  }
+
+  .quiz_timer {   /* set timer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 200px;
+    background-color: #b91c24;
+    color: #fff;
+  }
+
+  
+
+  
